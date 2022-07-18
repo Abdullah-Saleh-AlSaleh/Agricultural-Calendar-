@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +28,7 @@ namespace Agricultural_Calendar
         private void Form1_Load(object sender, EventArgs e)
         {
             CultureInfo CurrentCulture = CultureInfo.GetCultureInfo("ar-AE");
+            CultureInfo SA = CultureInfo.GetCultureInfo("ar-SA");
             HijriCalendar hijri1 = new HijriCalendar();
             string text = DateTime.Now.ToString("yyyy", CurrentCulture);
             int m = Convert.ToInt32(text);
@@ -87,18 +88,18 @@ namespace Agricultural_Calendar
             };
             foreach (var item in Data1)
             {
-                    Month1.Text = item.Month1.ToString("MMM") + "(" + item.Month1.ToString("MMM", CurrentCulture) + ")";
-                    Month2.Text = item.Month2.ToString("MMM") + "(" + item.Month2.ToString("MMM", CurrentCulture) + ")";
-                    Month3.Text = item.Month3.ToString("MMM") + "(" + item.Month3.ToString("MMM", CurrentCulture) + ")";
-                    Month4.Text = item.Month4.ToString("MMM") + "(" + item.Month4.ToString("MMM", CurrentCulture) + ")";
-                    Month5.Text = item.Month5.ToString("MMM") + "(" + item.Month5.ToString("MMM", CurrentCulture) + ")";
-                    Month6.Text = item.Month6.ToString("MMM") + "(" + item.Month6.ToString("MMM", CurrentCulture) + ")";
-                    Month7.Text = item.Month7.ToString("MMM") + "(" + item.Month7.ToString("MMM", CurrentCulture) + ")";
-                    Month8.Text = item.Month8.ToString("MMM") + "(" + item.Month8.ToString("MMM", CurrentCulture) + ")";
-                    Month9.Text = item.Month9.ToString("MMM") + "(" + item.Month9.ToString("MMM", CurrentCulture) + ")";
-                    Month10.Text = item.Month10.ToString("MMM") + "(" + item.Month10.ToString("MMM", CurrentCulture) + ")";
-                    Month11.Text = item.Month11.ToString("MMM") + "(" + item.Month11.ToString("MMM", CurrentCulture) + ")";
-                    Month12.Text = item.Month12.ToString("MMM") + "(" + item.Month12.ToString("MMM", CurrentCulture) + ")";
+                    Month1.Text = item.Month1.ToString("MMM", SA) + "(" + item.Month1.ToString("MMM", CurrentCulture) + ")";
+                    Month2.Text = item.Month2.ToString("MMM", SA) + "(" + item.Month2.ToString("MMM", CurrentCulture) + ")";
+                    Month3.Text = item.Month3.ToString("MMM", SA) + "(" + item.Month3.ToString("MMM", CurrentCulture) + ")";
+                    Month4.Text = item.Month4.ToString("MMM", SA) + "(" + item.Month4.ToString("MMM", CurrentCulture) + ")";
+                    Month5.Text = item.Month5.ToString("MMM", SA) + "(" + item.Month5.ToString("MMM", CurrentCulture) + ")";
+                    Month6.Text = item.Month6.ToString("MMM", SA) + "(" + item.Month6.ToString("MMM", CurrentCulture) + ")";
+                    Month7.Text = item.Month7.ToString("MMM", SA) + "(" + item.Month7.ToString("MMM", CurrentCulture) + ")";
+                    Month8.Text = item.Month8.ToString("MMM", SA) + "(" + item.Month8.ToString("MMM", CurrentCulture) + ")";
+                    Month9.Text = item.Month9.ToString("MMM", SA) + "(" + item.Month9.ToString("MMM", CurrentCulture) + ")";
+                    Month10.Text = item.Month10.ToString("MMM", SA) + "(" + item.Month10.ToString("MMM", CurrentCulture) + ")";
+                    Month11.Text = item.Month11.ToString("MMM", SA) + "(" + item.Month11.ToString("MMM", CurrentCulture) + ")";
+                    Month12.Text = item.Month12.ToString("MMM", SA) + "(" + item.Month12.ToString("MMM", CurrentCulture) + ")";
 
 
                     var Date1 = DateTimeAgo.TimeAgo(item.Month1);
@@ -160,18 +161,18 @@ namespace Agricultural_Calendar
             };
                 foreach (var item in Data1)
                 {
-                    Month1.Text = item.Month1.ToString("MMM") + "(" + item.Month1.ToString("MMM", CurrentCulture) + ")";
-                    Month2.Text = item.Month2.ToString("MMM") + "(" + item.Month2.ToString("MMM", CurrentCulture) + ")";
-                    Month3.Text = item.Month3.ToString("MMM") + "(" + item.Month3.ToString("MMM", CurrentCulture) + ")";
-                    Month4.Text = item.Month4.ToString("MMM") + "(" + item.Month4.ToString("MMM", CurrentCulture) + ")";
-                    Month5.Text = item.Month5.ToString("MMM") + "(" + item.Month5.ToString("MMM", CurrentCulture) + ")";
-                    Month6.Text = item.Month6.ToString("MMM") + "(" + item.Month6.ToString("MMM", CurrentCulture) + ")";
-                    Month7.Text = item.Month7.ToString("MMM") + "(" + item.Month7.ToString("MMM", CurrentCulture) + ")";
-                    Month8.Text = item.Month8.ToString("MMM") + "(" + item.Month8.ToString("MMM", CurrentCulture) + ")";
-                    Month9.Text = item.Month9.ToString("MMM") + "(" + item.Month9.ToString("MMM", CurrentCulture) + ")";
-                    Month10.Text = item.Month10.ToString("MMM") + "(" + item.Month10.ToString("MMM", CurrentCulture) + ")";
-                    Month11.Text = item.Month11.ToString("MMM") + "(" + item.Month11.ToString("MMM", CurrentCulture) + ")";
-                    Month12.Text = item.Month12.ToString("MMM") + "(" + item.Month12.ToString("MMM", CurrentCulture) + ")";
+                    Month1.Text = item.Month1.ToString("MMM", SA) + "(" + item.Month1.ToString("MMM", CurrentCulture) + ")";
+                    Month2.Text = item.Month2.ToString("MMM", SA) + "(" + item.Month2.ToString("MMM", CurrentCulture) + ")";
+                    Month3.Text = item.Month3.ToString("MMM", SA) + "(" + item.Month3.ToString("MMM", CurrentCulture) + ")";
+                    Month4.Text = item.Month4.ToString("MMM", SA) + "(" + item.Month4.ToString("MMM", CurrentCulture) + ")";
+                    Month5.Text = item.Month5.ToString("MMM", SA) + "(" + item.Month5.ToString("MMM", CurrentCulture) + ")";
+                    Month6.Text = item.Month6.ToString("MMM", SA) + "(" + item.Month6.ToString("MMM", CurrentCulture) + ")";
+                    Month7.Text = item.Month7.ToString("MMM", SA) + "(" + item.Month7.ToString("MMM", CurrentCulture) + ")";
+                    Month8.Text = item.Month8.ToString("MMM", SA) + "(" + item.Month8.ToString("MMM", CurrentCulture) + ")";
+                    Month9.Text = item.Month9.ToString("MMM", SA) + "(" + item.Month9.ToString("MMM", CurrentCulture) + ")";
+                    Month10.Text = item.Month10.ToString("MMM", SA) + "(" + item.Month10.ToString("MMM", CurrentCulture) + ")";
+                    Month11.Text = item.Month11.ToString("MMM", SA) + "(" + item.Month11.ToString("MMM", CurrentCulture) + ")";
+                    Month12.Text = item.Month12.ToString("MMM", SA) + "(" + item.Month12.ToString("MMM", CurrentCulture) + ")";
 
                     var Date1 = DateTimeAgo.TimeAgo(item.Month1);
                     var Date2 = DateTimeAgo.TimeAgo(item.Month2);
